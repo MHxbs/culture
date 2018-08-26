@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /culture
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/culture?useSSL=false&erverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: 123456
+  thymeleaf:
+    prefix: classpath:/templates/
+
+mybatis:
+  type-aliases-package: team.redrock.culture.entity
+
+appID: wx50cd7859ecffe7de
+appSecret: ecec700ca2f0bdc859c5c302457937b8
+RedirectURL: http://hong.s1.natapp.cc/culture/index
+scope: snsapi_userinfo
